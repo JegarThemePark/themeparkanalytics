@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from textblob import TextBlob
 import re
 
-# These functions come from https://github.com/adilmoujahid/Twitter_Analytics/blob/master/analyze_tweets.py and http://www.geeksforgeeks.org/twitter-sentiment-analysis-using-python//
+# These functions come from  https://github.com/adilmoujahid/Twitter_Analytics/blob/master/analyze_tweets.py and http://www.geeksforgeeks.org/twitter-sentiment-analysis-using-python//
 
 def extract_link(text):
     """
@@ -57,11 +57,8 @@ tweets_data_path = '../data/twitter_themeparks.txt'
 tweets_data = []
 tweets_file = open(tweets_data_path, "r")
 for line in tweets_file:
-    try:
         tweet = json.loads(line)
         tweets_data.append(tweet)
-    except:
-        continue
 # Check you've created a list that actually has a length. Huzzah!
 print len(tweets_data)
 
