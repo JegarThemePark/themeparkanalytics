@@ -31,4 +31,4 @@ for i in range(24):
 
 
 ride_frame = pd.DataFrame(ride_waits)
-ride_frame.to_csv('../ride_waits_24hr.csv', sep =',', encoding='utf-8')
+ride_frame.to_csv('../../Data/ride_waits_ihr.csv', sep =',', encoding='utf-8')
